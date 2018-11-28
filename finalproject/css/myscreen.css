@@ -1,0 +1,70 @@
+*{
+    box-sizing:border-box;
+    font-family: 'Sunflower', sans-serif;
+}
+body{
+    background-image:url("media/film2-medium.jpeg")
+}
+h1{
+    color:lightblue;
+    text-align:center;
+    text-shadow:black 3px 3px 5px;
+    background-color:gray;
+    box-shadow:black 3px 3px;
+    font-size:3em;
+}
+h2{
+    color:lightblue;
+    text-align:center;
+    text-shadow:black 2px 2px 2px;
+    font-size:2.5em;
+    background-color:gray;
+    box-shadow:black 3px 3px;
+}
+nav{
+    color:lightblue;
+}
+article{
+    font-size:1.5em;
+    text-align:center;
+    background-color:gray;
+    display:-webkit-flex;
+    display:flex;
+    height:auto;
+    width:1200px;
+    -webkit-flex-wrap:wrap;
+    flex-wrap:wrap;
+    -webkit-align-items:stretch;
+    align-items:stretch;
+}
+footer{
+    text-align:center;
+    padding:10px;
+}
+a:link {
+    color:grey; 
+    text-decoration: underline;
+}
+a:active {
+    color:lightblue; 
+    text-decoration: underline;
+}
+a:visited {
+    color:black; 
+    text-decoration: underline; 
+}
+a:hover {
+    color: white; 
+    background-color: grey; 
+    text-decoration: none; 
+}
+@keyframes rock {
+    0%   { transform: rotate(20deg);}
+    25%  { transform: rotate(-20deg);}
+    50%  { transform: rotate(20deg);}
+    100% { transform: rotate(-20deg);}
+}
+h1:hover{    
+    animation-name: rock;
+    animation-duration: 4s;
+}
